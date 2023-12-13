@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: rgb(176, 210, 235);
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(2, 31, 64);
+    font-size: 24px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(2, 31, 64);
+}
+
+#top{
+    background-color: rgb(2, 31, 64);
+    max-height: 200px;
+}
+
+#top img{
+    max-height: 200px;
+}
+
+.kontakt{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 5%;
+    background-color: white;
+}
+
+.kont-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin:10px 0;
+}
+
+.kont-item img{
+    width: 12%;
+    margin-right: 4%;
+}
+
+.jezik{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+#odabrani{
+    color:rgb(117, 159, 190);
+}
+
+.ivan{
+    color: rgb(176, 210, 235);
+    background-color: rgb(2, 31, 64);
+    margin-top: 30px;
+}
+
+.ivan > p{
+    padding: 15px 0;
+}
+
+article{
+    padding: 30px 1%;
+}
+
+article h2{
+    margin-bottom: 15px;
+}
+
+.analiza, .definiranje{
+    padding: 30px 0;
+    list-style-type: square;
+}
+
+.analiza img, .definiranje img{
+    width: 40%;
+}
+
+.analiza ul, .definiranje ul{
+    width: 85%;
+    padding: 15px 0 15px 15%;
+    list-style-type: square;
+}
+
+.analiza ul li , .definiranje ul li{
+    text-align: left;
+    padding: 5px 0;
+}
+
+.definiranje{
+    color:rgb(176, 210, 235);
+    background-color: rgb(2, 31, 64);
+}
+
+#start-section{
+    padding: 50px;
+}
+
+#start{
+    background-color: white;
+    width: 85%;
+    padding: 30px 15%;
+    font-size: 30px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    color:rgb(176, 210, 235);
+    background-color: rgb(2, 31, 64);
+}
