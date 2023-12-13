@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg15408"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="mail.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15410"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="1.4823793"
+     inkscape:cx="280.96722"
+     inkscape:cy="239.81716"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs15405">
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="41.396343,39.881841"
+       end_point="41.396343,91.374853"
+       center_point="41.396343,65.628347"
+       id="path-effect24157"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="vertical"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="54.212997,35.204765"
+       end_point="54.212997,84.899813"
+       center_point="54.212997,60.052289"
+       id="path-effect23396"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="vertical"
+       discard_orig_path="false"
+       fuse_paths="true"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="41.396343,39.881841"
+       end_point="41.396343,91.374853"
+       center_point="41.396343,65.628347"
+       id="path-effect15872"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="vertical"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="69.427251,41.648759"
+       end_point="69.427251,173.94043"
+       center_point="69.427251,107.79459"
+       id="path-effect28131"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="vertical"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+    <inkscape:path-effect
+       effect="mirror_symmetry"
+       start_point="45.471575,92.823914"
+       end_point="45.471575,104.68745"
+       center_point="45.471575,98.75568"
+       id="path-effect28125"
+       is_visible="true"
+       lpeversion="1.1"
+       mode="vertical"
+       discard_orig_path="false"
+       fuse_paths="false"
+       oposite_fuse="false"
+       split_items="false"
+       split_open="false" />
+  </defs>
+  <g
+     inkscape:label="Sloj 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       inkscape:label="Sloj 1"
+       id="g2418"
+       transform="matrix(0.57227102,0,0,0.57227102,106.02317,50.971958)">
+      <path
+         id="path2416"
+         style="fill:none;stroke:#021f40;stroke-width:20.96908559;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m -110.13718,-12.970215 v 85.500253 h 62.397237 14.063573 v -85.500253 z"
+         sodipodi:nodetypes="cccccc" />
+    </g>
+    <path
+       style="fill:none;stroke:#021f40;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 110.53974,98.474899 0,-79.80037 H 20.464548 v 96.638021 h 77.83813"
+       id="path2535"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#021f40;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 86.75116,92.478797 h 22.764"
+       id="path3418"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
