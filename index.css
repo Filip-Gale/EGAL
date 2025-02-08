@@ -151,19 +151,19 @@ a{
         flex-direction: row;
         justify-content:space-around;
         width: 50%;
-        margin: 200px auto 0;
+        margin: 20vh auto 0;
         align-items: flex-start;
     }
 
     .contact-type{
         width: 15%;
         margin: 0 50px;
-        padding: 1%;
-        background-color: rgba(255, 255, 255, 0.562);
+        padding: 15px;
+        background-color: white;
     }
 
     .contact-type:hover{
-        background-color: white;
+        
         transform: scale(1.1);
     }
 
