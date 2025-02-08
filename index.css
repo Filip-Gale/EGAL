@@ -136,7 +136,7 @@ a{
     animation: fadeout 0.5s forwards;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
     
     #top-content{
