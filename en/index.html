@@ -1,81 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EGAL</title>
     <link rel="stylesheet" href="../index.css">
-    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <section id="top">
-        <img src="../img/logo.svg" alt="logo">
+    <section id="top" onclick="fadeOut()">
+        <div id = "top-content">
+            <img src="../img/logo1.png" alt="logo">
+            <p>E G A L</p>
+        </div>
+        <div id="press">
+        </div>
     </section>
-    <section class="jezik">
-        <a href="../hr/index.html" lang="hr" >Hrvatski</a>
-        <a href="#" id="odabrani">English</a>
+    <section id="explanation">
+        <p>"Analysis - Defining - Action - Monitoring"</p>
     </section>
-    <section class="kontakt" id="kontaktStart">
-        <a href="tel:+385914826124">
-            <div class="kont-item">
-                <img src="../img/tel.svg" alt="tel">
-                <p>+385 91 482 6124</p>
-            </div>
-        </a>
-        <a href="mailto:ivan.gale@egalsmp.hr">
-            <div class="kont-item">
-                <img src="../img/mail.svg" alt="tel">
-                <p>ivan.gale@egalsmp.hr</p>
-            </div>
-        </a>
-        <a href="https://www.linkedin.com/in/ivan-gale-0892b82/">
-            <div class="kont-item" >
-                <img src="../img/LinkedIn.png" alt="tel">
-                <p>LinkedIn</p>
-            </div>
-        </a>
+    <section id="contacts">
+        <div class="contact-type" onclick="window.open('https://www.linkedin.com/in/ivan-gale-0892b82/', '_blank');" style="cursor: pointer;">
+            <img src="../img/LinkedIn.png" alt="linkedin">
+            <p>Web</p>
+        </div>
+        <div class="contact-type" onclick="window.location.href='mailto:ivan.gale@egalsmp.hr';" style="cursor: pointer;">
+            <img src="../img/mail.svg" alt="mail">
+            <p>Mail</p>
+        </div>        
+        
+        <div class="contact-type" onclick="window.location.href='tel:+385914826124';" style="cursor: pointer;">
+            <img src="../img/tel.svg" alt="phone">
+            <p>Call</p>
+        </div>
+        
     </section>
-
-    <section class="ivan">
-        <p>Ivan Gale</p>
-        <img src="../img/ivan.jpeg" alt="Ja">
-        <article>
-            <h2>Sales Assistance</h2>
-            <p>3 months of working with the sales department on the entire sales process, including fieldwork.</p>
-        </article>
-    </section>
-
-    <section class="analiza">
-        <img src="../img/analiza.svg" alt="analiza">
-        <h2>Analyzing</h2>
-        <ul>
-            <li>the market</li>
-            <li>current position</li>
-            <li>client structure</li>
-            <li>strenghts and weaknesses</li>
-            <li>pricing policies</li>
-        </ul>
-    </section>
-
-    <section class="definiranje">
-        <img src="../img/definiranje.svg" alt="definiranje">
-        <h2>Defining</h2>
-        <ul>
-            <li>goals</li>
-            <li>bottom up - top down</li>
-            <li>sales presentations</li>
-            <li>operative reports</li>
-            <li>management report</li>
-            <li>balance sheet</li>
-        </ul>
-    </section>
-
-    <section id="start-section">
-        <a id="start" href="#kontaktStart">Lets go!</a>
-    </section>
-
-    <footer>
-        @EGAL
-    </footer>
 </body>
+
+<script>
+    function fadeOut() {
+        document.getElementById("top").classList.add("hidden");
+    }
+    </script>
+
 </html>

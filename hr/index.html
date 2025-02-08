@@ -5,76 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EGAL</title>
     <link rel="stylesheet" href="../index.css">
-    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <section id="top">
-        <img src="../img/logo.svg" alt="logo">
+    <section id="top" onclick="fadeOut()">
+        <div id = "top-content">
+            <img src="../img/logo1.png" alt="logo">
+            <p>E G A L</p>
+        </div>
+        <div id="press">
+        </div>
     </section>
-    <section class="jezik">
-        <a href="#" id="odabrani">Hrvatski</a>
-        <a href="../en/index.html" lang="en">English</a>
+    <section id="explanation">
+        <p>"Analiza - Definiranje - Akcija - Praćenje"</p>
     </section>
-    <section class="kontakt" id="kontaktStart">
-        <a href="tel:+385914826124">
-            <div class="kont-item">
-                <img src="../img/tel.svg" alt="tel">
-                <p>+385 91 482 6124</p>
-            </div>
-        </a>
-        <a href="mailto:ivan.gale@egalsmp.hr">
-            <div class="kont-item">
-                <img src="../img/mail.svg" alt="tel">
-                <p>ivan.gale@egalsmp.hr</p>
-            </div>
-        </a>
-        <a href="https://www.linkedin.com/in/ivan-gale-0892b82/">
-            <div class="kont-item" >
-                <img src="../img/LinkedIn.png" alt="tel">
-                <p>LinkedIn</p>
-            </div>
-        </a>
+    <section id="contacts">
+        <div class="contact-type" onclick="window.open('https://www.linkedin.com/in/ivan-gale-0892b82/', '_blank');" style="cursor: pointer;">
+            <img src="../img/LinkedIn.png" alt="linkedin">
+            <p>Web</p>
+        </div>
+        <div class="contact-type" onclick="window.location.href='mailto:ivan.gale@egalsmp.hr';" style="cursor: pointer;">
+            <img src="../img/mail.svg" alt="mail">
+            <p>Mail</p>
+        </div>        
+        
+        <div class="contact-type" onclick="window.location.href='tel:+385914826124';" style="cursor: pointer;">
+            <img src="../img/tel.svg" alt="phone">
+            <p>Poziv</p>
+        </div>
+        
     </section>
-
-    <section class="ivan">
-        <p>Ivan Gale</p>
-        <img src="../img/ivan.jpeg" alt="Ja">
-        <article>
-            <h2>Pomoć u prodaji</h2>
-            <p>Unutar 3 mjeseca radi se sa odjelom prodaje na cjelokupnom prodajnom procesu, uključujući izlazak na teren.</p>
-        </article>
-    </section>
-
-    <section class="analiza">
-        <img src="../img/analiza.svg" alt="analiza">
-        <h2>Analiza</h2>
-        <ul>
-            <li>tržišta i pozicije na tržištu</li>
-            <li>strukture klijenata</li>
-            <li>snage i slabosti</li>
-            <li>cjenovne politike</li>
-        </ul>
-    </section>
-
-    <section class="definiranje">
-        <img src="../img/definiranje.svg" alt="definiranje">
-        <h2>Definiranje</h2>
-        <ul>
-            <li>ciljeva</li>
-            <li>bottom up - top down</li>
-            <li>prodajne prezentacije</li>
-            <li>operativnog izvještaja</li>
-            <li>izvještaja za upravu</li>
-            <li>slika stanja</li>
-        </ul>
-    </section>
-
-    <section id="start-section">
-        <a id="start" href="#kontaktStart">Idemo!</a>
-    </section>
-
-    <footer>
-        @EGAL
-    </footer>
 </body>
+
+<script>
+    function fadeOut() {
+        document.getElementById("top").classList.add("hidden");
+    }
+    </script>
+
 </html>

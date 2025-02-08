@@ -1,132 +1,174 @@
+/*
+background-color: rgb(176, 210, 235); light blue
+background-color: rgb(2, 31, 64); dark blue
+*/
 *{
     margin: 0;
     padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+}
+
 body{
-    background-color: rgb(176, 210, 235);
     font-family: Arial, Helvetica, sans-serif;
-    color:rgb(2, 31, 64);
+    color: rgb(2, 31, 64);
+    background-color: rgb(176, 210, 235);
     font-size: 24px;
     text-align: center;
+    user-select: none;
 }
 
 img{
+    width: 60%;
+}
+
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
     width: 100%;
+    letter-spacing: 10px;
+    background-color: rgb(2, 31, 64); 
+    color:rgb(176, 210, 235);
+    transition: 0.5s;
+    position:fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#top p{
+    margin-top: 20px;
+}
+
+#top-content{
+    animation: fadein 1s ease-out;
+}
+
+#press{
+    transition: 0.15s;
+    margin-top: 200px;
+    opacity: 0.2;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgb(176, 210, 235);
+    animation: growShrink 2s infinite;
+}
+
+#press:hover{
+    opacity: 1;
+}
+
+#explanation{
+    padding: 15px;
+    padding-top: 100px;
+    color: rgb(2, 31, 64);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contacts{
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.contact-type{
+    background-color: white;
+    border-radius: 15px;
+    width: 20%;
+    padding: 5%;
+    text-align: center;
+    margin: 50px auto 0;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-type img{
+    width: 80%;
 }
 
 a{
     text-decoration: none;
-    color: rgb(2, 31, 64);
+    color:  rgb(2, 31, 64); 
 }
 
-#top{
-    background-color: rgb(2, 31, 64);
-    max-height: 200px;
+@keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-#top img{
-    max-height: 200px;
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
 }
 
-.kontakt{
-    display: flex;
-    flex-direction: column;
-    padding: 15px 5%;
-    background-color: white;
+@keyframes growShrink {
+    0% {
+        transform: scale(1); /* Initial size */
+    }
+    50% {
+        transform: scale(1.2); /* Grow to 1.5 times the size */
+    }
+    100% {
+        transform: scale(1); /* Shrink back to initial size */
+    }
 }
 
-.kont-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    margin:10px 0;
+.hidden {
+    animation: fadeout 0.5s forwards;
 }
 
-.kont-item img{
-    width: 12%;
-    margin-right: 4%;
-}
+@media (min-width: 800px) {
 
-.jezik{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 15px 0;
-}
+    
+    #top-content{
+        width: 20%;
+    }
 
-#odabrani{
-    color:rgb(117, 159, 190);
-}
+    #explanation{
+        font-size: 32px;
+    }
 
-.ivan{
-    color: rgb(176, 210, 235);
-    background-color: rgb(2, 31, 64);
-    margin-top: 30px;
-}
+    #contacts{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        width: 50%;
+        margin: 200px auto 0;
+        align-items: flex-start;
+    }
 
-.ivan > p{
-    padding: 15px 0;
-}
+    .contact-type{
+        width: 15%;
+        margin: 0 50px;
+        padding: 1%;
+        background-color: rgba(255, 255, 255, 0.562);
+    }
 
-article{
-    padding: 30px 1%;
-}
+    .contact-type:hover{
+        background-color: white;
+        transform: scale(1.1);
+    }
 
-article h2{
-    margin-bottom: 15px;
-}
-
-.analiza, .definiranje{
-    padding: 30px 0;
-    list-style-type: square;
-}
-
-.analiza img, .definiranje img{
-    width: 40%;
-}
-
-.analiza ul, .definiranje ul{
-    width: 85%;
-    padding: 15px 0 15px 15%;
-    list-style-type: square;
-}
-
-.analiza ul li , .definiranje ul li{
-    text-align: left;
-    padding: 5px 0;
-}
-
-.definiranje{
-    color:rgb(176, 210, 235);
-    background-color: rgb(2, 31, 64);
-}
-
-#start-section{
-    padding: 120px 0;
-}
-
-#start{
-    background-color: rgb(2, 31, 64);
-    width: 85%;
-    padding: 50px 15%;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0 5px rgb(2, 31, 64);
-}
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-    color:rgb(176, 210, 235);
-    background-color: rgb(2, 31, 64);
+    .contact-type img{
+        width: 100%;
+    }
 }

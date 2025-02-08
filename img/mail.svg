@@ -19,20 +19,20 @@
      bordercolor="#666666"
      borderopacity="1.0"
      inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
      units="px"
-     inkscape:zoom="1.4823793"
-     inkscape:cx="280.96722"
-     inkscape:cy="239.81716"
+     inkscape:zoom="1.0482005"
+     inkscape:cx="2.38504"
+     inkscape:cy="277.14165"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer2" />
   <defs
      id="defs15405">
     <inkscape:path-effect
@@ -109,20 +109,21 @@
   <g
      inkscape:label="Sloj 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     style="display:none;opacity:0.53442">
     <g
        inkscape:label="Sloj 1"
        id="g2418"
        transform="matrix(0.57227102,0,0,0.57227102,106.02317,50.971958)">
       <path
          id="path2416"
-         style="fill:none;stroke:#021f40;stroke-width:20.96908559;stroke-miterlimit:4;stroke-dasharray:none"
+         style="fill:none;stroke:#021f40;stroke-width:20.9691;stroke-miterlimit:4;stroke-dasharray:none"
          d="m -110.13718,-12.970215 v 85.500253 h 62.397237 14.063573 v -85.500253 z"
          sodipodi:nodetypes="cccccc" />
     </g>
     <path
        style="fill:none;stroke:#021f40;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 110.53974,98.474899 0,-79.80037 H 20.464548 v 96.638021 h 77.83813"
+       d="M 110.53974,98.474899 V 18.674529 H 20.464548 v 96.638021 h 77.83813"
        id="path2535"
        sodipodi:nodetypes="ccccc" />
     <path
@@ -130,5 +131,17 @@
        d="m 86.75116,92.478797 h 22.764"
        id="path3418"
        sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Sloj 2"
+     style="opacity:1">
+    <path
+       id="path1187"
+       style="opacity:1;fill:#021f40;fill-opacity:0.99182;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 63.243616,56.665575 C 52.19291,67.71628 54.642578,94.442766 54.642578,94.442766 l 0,319.924874 c 0,0 0.2597,23.53238 10.793459,34.06614 10.93127,10.93127 35.583993,10.62481 35.583993,10.62481 H 327.943 c 0,0 22.6721,-1.53208 32.82672,-11.6867 10.65309,-10.65309 10.25567,-33.51056 10.25567,-33.51056 H 99.839844 V 93.431641 H 395.31055 V 327.51367 l -44.52344,0.20117 V 142.67578 H 140.99023 v 230.71094 h 253.01758 c 0,0 22.38453,-1.12476 33.18555,-11.92578 10.68779,-10.68779 12.64062,-33.41992 12.64062,-33.41992 V 92.897309 c 0,0 1.24216,-24.870705 -9.44428,-35.557143 -10.94168,-10.941683 -36.97735,-9.781572 -36.97735,-9.781572 H 100.17679 c 0,0 -26.200657,-1.625536 -36.933174,9.106981 z M 185.20898,188.00391 H 305.25195 V 326.50195 H 185.20898 Z"
+       transform="scale(0.26458333)"
+       sodipodi:nodetypes="sccsccsccccccccccsccsccsccccc" />
   </g>
 </svg>
