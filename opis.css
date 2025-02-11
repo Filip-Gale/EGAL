@@ -1,0 +1,164 @@
+/*
+background-color: rgb(176, 210, 235); light blue
+background-color: rgb(2, 31, 64); dark blue
+*/
+body{
+    color: rgb(2, 31, 64);
+    font-size: 20px;
+}
+
+h1{
+    padding: 20px 0;
+    color: rgb(176, 210, 235);
+    background-color: rgb(2, 31, 64);
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+#main-points{
+    margin: 8vh 0;
+}
+
+#main-points p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#main-point-steps{
+    max-width: 400px;
+    width: 84%;
+    border-radius: 15px;
+    border: 3px solid rgb(2, 31, 64);
+    padding: 0 5px 20px;
+    margin: 0 auto;
+}
+
+#short-steps{
+    margin: 50px 0;
+}
+
+.short-step{
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: rgb(2, 31, 64);
+    border-radius: 15px;
+    color: rgb(176, 210, 235);
+    padding: 15px;
+    text-align: left;
+    opacity: 0; /* Start with the element hidden */
+    transition: opacity 0.2s ease-out;
+}
+
+.module.visible, .short-step.visible{
+    opacity: 1; /* Make the element visible when in view */
+    animation: fadeIn 0.7s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.step-name{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.step-description{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#module-choice{
+    margin-bottom: 50px;
+}
+
+.press-button{
+    background-color: white;
+    max-width: 150px;
+    margin: 20px auto;
+    transition: 0.1s;
+    font-weight: bold;
+}
+
+.press-button-chosen{
+    background-color: rgb(2, 31, 64);
+    color: white;
+}
+
+#modules-7, #modules-12{
+    background-color: rgb(2, 31, 64);
+    padding: 30px 1%;
+    color: rgb(176, 210, 235);
+    text-align: left;
+    display: none;
+    transition: 0.2s;
+}
+
+#modules-title{
+    font-size: 24px;
+    text-align: left;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.module{
+    margin: 30px auto 0;
+    padding: 15px;
+    width: 80%;
+    border-radius: 15px;
+    max-width: 500px;
+    opacity: 0; /* Start with the element hidden */
+    transition: opacity 0.2s ease-out;
+}
+
+.module-title{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.module-goal{
+    margin-top: 10px;
+}
+
+.module-duration{
+    font-weight: bold;
+}
+
+.module-activities{
+    margin: 20px 0;
+    text-align: left;
+    width: 90%;
+    padding-left: 20px;
+}
+
+.module-activity{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+@media (min-width: 700px){
+    #short-steps{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 700px;
+        margin: 20px auto;
+    }
+
+    #module-choice{
+        display: flex;
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto 50px;
+    }
+}

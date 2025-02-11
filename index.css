@@ -7,7 +7,6 @@ background-color: rgb(2, 31, 64); dark blue
     padding: 0;
 }
 
-
 html {
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -46,7 +45,7 @@ img{
     z-index: 1;
 }
 
-#top p{
+#top-content p{
     margin-top: 20px;
 }
 
@@ -57,16 +56,14 @@ img{
 #press{
     transition: 0.15s;
     margin-top: 20vh;
-    opacity: 0.4;
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    background-color: rgb(176, 210, 235);
-    animation: growShrink 2s infinite;
 }
 
-#press:hover{
-    opacity: 1;
+.press-button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(176, 210, 235);
+    color: rgb(2, 31, 64);
+    margin-top: 20px;
 }
 
 #explanation{
@@ -74,6 +71,8 @@ img{
     color: rgb(2, 31, 64);
     font-weight: bold;
     font-size: 20px;
+    color: rgb(176, 210, 235);
+    background-color: rgb(2, 31, 64); 
 }
 
 #contacts{
