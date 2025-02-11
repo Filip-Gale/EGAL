@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EGAL</title>
+    <link rel="stylesheet" href="../opis.css">
     <link rel="stylesheet" href="../index.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
@@ -15,21 +16,68 @@
         </div>
         <div id="press">
             <div class="press-button" onclick="fadeOut()" style="cursor: pointer;">
-                <p>Kontakti</p>
-            </div>
-            <div class="press-button" onclick="window.location.href='opis.html';" style="cursor: pointer;">
-                <p>Koraci</p>
+                <p>Započni</p>
             </div>
         </div>
     </section>
-    <section id="explanation">
-        <p>"Analiza - Definiranje - Akcija - Praćenje"</p>
+
+    <section id="short-explanation">
+        <h1>
+             Unaprjeđenje prodaje i prodajnih timova
+        </h1>
+        <h2>
+            Želite li poboljšati prodajne rezultate i osnažiti svoj prodajni tim?
+        </h2>
+        <div id="main-points">
+            <h2>  </h2>
+            <div id="main-point-steps">
+                <p>Jasnije razumijevanje tržista</p>
+                <p>Bolje predstavnljanje ponude</p>
+                <p>Učinkovitije pračenje rezultata</p>
+            </div>
+        </div>
     </section>
+
+
+    <section id="short-steps">
+        <div class="short-step">
+            <p class="step-name">Analiza tržišta</p>
+            <p class="step-description">Istražujemo konkurenciju i potrebe kupaca kako biste znali gdje su vaše prilike za rast.</p>
+        </div>
+        <div class="short-step">
+            <p class="step-name"> Definiranje jedinstvene prodajne prednosti (USP)</p>
+            <p class="step-description">Pomažem vam da jasno i uvjerljivo istaknete ono što vas čini boljima od konkurencije.</p>
+        </div>
+        <div class="short-step">
+            <p class="step-name">Izrada i testiranje prodajne prezentacije</p>
+            <p class="step-description">azvijamo prodajnu priču i provjeravamo kako funkcionira u stvarnim razgovorima s kupcima.</p>
+        </div>
+        <div class="short-step">
+            <p class="step-name">Postavljanje sustava izvještavanja</p>
+            <p class="step-description">Kreiramo jednostavne alate za praćenje prodajnih rezultata kako bi tim i uprava imali jasnu sliku učinka.</p>
+        </div>
+        <div class="short-step">
+            <p class="step-name">Cilj</p>
+            <p class="step-description">Učiniti prodaju lakšom, jasnijom i uspješnijom. </p>
+        </div>
+    </section>
+
+
+    <section id="pre-contact">
+        Prvi korak ovog procesa su 2 dana besplatnih konzultacija, tijekom kojih ćemo procijeniti stvarne potrebe vašeg prodajnog tima i odrediti ključne module potrebne za rast prodaje.
+    </section>
+
+    
+    <section id="module-choice">
+        <div id="press-button-contact1" class="press-button-choice"  onclick="window.location.href='opis.html';" style="cursor: pointer;">
+            <p>Moduli</p>
+        </div>
+        <div id="press-button-contact2" class="press-button-choice" onclick="setContacts()" style="cursor: pointer;">
+            <p>Kontakti</p>
+        </div>
+    </section>
+
     <section id="contacts">
-        <div class="contact-type" onclick="window.location.href='opis.html';" style="cursor: pointer;">
-            <img src="../img/question.png" alt="phone">
-            <p>Koraci</p>
-        </div>
         <div class="contact-type" onclick="window.open('https://www.linkedin.com/in/ivan-gale-0892b82/', '_blank');" style="cursor: pointer;">
             <img src="../img/LinkedIn.png" alt="linkedin">
             <p>Web</p>
@@ -47,9 +95,42 @@
 </body>
 
 <script>
+
+    var clicked = false;
+
+    function setContacts() {
+
+        document.getElementById("contacts").style.display = "flex";
+
+        document.getElementById("press-button-contact2").classList.add("press-button-chosen");
+
+        if(!clicked){
+            clicked = true;
+            window.scrollBy({ top: 450, behavior: 'smooth' });
+        }
+    }
+
     function fadeOut() {
         document.getElementById("top").classList.add("hidden");
     }
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".module, .short-step, .contact-type");
+
+    const observerOptions = {
+        threshold: 0.2, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+        });
+    }, observerOptions);
+
+    elements.forEach((el) => observer.observe(el));
+    });
     </script>
 
 </html>

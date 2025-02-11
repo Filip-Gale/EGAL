@@ -25,6 +25,10 @@ body{
     user-select: none;
 }
 
+section{
+    margin: 0 auto;
+}
+
 img{
     width: 60%;
 }
@@ -36,6 +40,7 @@ img{
     flex-direction: column;
     height: 100vh;
     width: 100%;
+    max-width: 100%;
     letter-spacing: 10px;
     background-color: rgb(2, 31, 64); 
     color:rgb(176, 210, 235);
@@ -59,12 +64,28 @@ img{
     letter-spacing: normal;
 }
 
-.press-button{
+.press-button, .press-button-choice{
     padding: 10px 20px;
     border-radius: 15px;
     background-color: rgb(176, 210, 235);
     color: rgb(2, 31, 64);
     margin-top: 20px;
+}
+
+.press-button-choice{
+    background-color: white;
+    max-width: 150px;
+    margin: 20px auto;
+}
+
+.press-button-chosen{
+    transition: 0.1s;
+    background-color: rgb(2, 31, 64);
+    color: white;
+}
+
+#module-choice{
+    margin-bottom: 50px;
 }
 
 #explanation{
@@ -74,11 +95,20 @@ img{
     font-size: 20px;
     color: rgb(176, 210, 235);
     background-color: rgb(2, 31, 64); 
+    max-width: 100%;
+}
+
+#pre-contact{
+    width: 90%;
+    max-width: 700px;
+    font-size: 20px;
 }
 
 #contacts{
     flex-direction: column;
-    margin-top: 50px;
+    margin: 50px 0;
+    display: none;
+    max-width: 700px;
 }
 
 .contact-type{
@@ -94,15 +124,17 @@ img{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.contact-type.visible{
+    opacity: 1;
+    animation: fadein 0.5s ease-in-out;
 }
 
 .contact-type img{
     width: 80%;
-}
-
-a{
-    text-decoration: none;
-    color:  rgb(2, 31, 64); 
 }
 
 @keyframes fadein{
@@ -147,11 +179,11 @@ a{
     }
 
     #contacts{
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content:space-around;
         width: 50%;
-        margin: 20vh auto 0;
+        margin: 50px auto 100px;
         align-items: flex-start;
     }
 
