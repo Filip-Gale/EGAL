@@ -9,10 +9,6 @@
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
 <body>
-    
-
-
-
     <div id="module-choice">
         <div id="press-button-7" class="press-button" onclick="setModule7()" style="cursor: pointer;">
             <p>7-tjedni plan</p>
@@ -20,7 +16,7 @@
         <div id="press-button-12" class="press-button" onclick="setModule12()" style="cursor: pointer;">
             <p>12-tjedni plan</p>
         </div>
-        <div id="press-button-12" class="press-button" onclick="window.location.href='index.html';" style="cursor: pointer;">
+        <div id="press-button-contacts" class="press-button" onclick="setContacts()" style="cursor: pointer;">
             <p>Kontakti</p>
         </div>
     </div>
@@ -237,6 +233,23 @@
             </div>
         </div>
     </section>
+
+    
+    <section id="contacts">
+        <div class="contact-type" onclick="window.open('https://www.linkedin.com/in/ivan-gale-0892b82/', '_blank');" style="cursor: pointer;">
+            <img src="../img/LinkedIn.png" alt="linkedin">
+            <p>Web</p>
+        </div>
+        <div class="contact-type" onclick="window.location.href='mailto:ivan.gale@egalsmp.hr';" style="cursor: pointer;">
+            <img src="../img/mail.svg" alt="mail">
+            <p>Mail</p>
+        </div>        
+        
+        <div class="contact-type" onclick="window.location.href='tel:+385914826124';" style="cursor: pointer;">
+            <img src="../img/tel.svg" alt="phone">
+            <p>Poziv</p>
+        </div>
+    </section>
 </body>
 
 <script>
@@ -246,9 +259,11 @@
 
         document.getElementById("modules-7").style.display = "block";
         document.getElementById("modules-12").style.display = "none";
+        document.getElementById("contacts").style.display = "none";
 
         document.getElementById("press-button-7").classList.add("press-button-chosen");
         document.getElementById("press-button-12").classList.remove("press-button-chosen");
+        document.getElementById("press-button-contacts").classList.remove("press-button-chosen");
         
         if(!clicked){
             clicked = true;
@@ -260,9 +275,26 @@
 
         document.getElementById("modules-7").style.display = "none";
         document.getElementById("modules-12").style.display = "block";
+        document.getElementById("contacts").style.display = "none";
 
         document.getElementById("press-button-7").classList.remove("press-button-chosen");
         document.getElementById("press-button-12").classList.add("press-button-chosen");
+        document.getElementById("press-button-contacts").classList.remove("press-button-chosen");
+        
+        if(!clicked){
+            clicked = true;
+            window.scrollBy({ top: 150, behavior: 'smooth' });
+        }
+    }
+
+    function setContacts(){
+        document.getElementById("modules-7").style.display = "none";
+        document.getElementById("modules-12").style.display = "none";
+        document.getElementById("contacts").style.display = "flex";
+
+        document.getElementById("press-button-7").classList.remove("press-button-chosen");
+        document.getElementById("press-button-12").classList.remove("press-button-chosen");
+        document.getElementById("press-button-contacts").classList.add("press-button-chosen");
         
         if(!clicked){
             clicked = true;
@@ -271,7 +303,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".module, .short-step");
+    const elements = document.querySelectorAll(".module, .short-step, .contact-type");
 
     const observerOptions = {
         threshold: 0.2, // Trigger when 10% of the element is visible
