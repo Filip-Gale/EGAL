@@ -55,7 +55,8 @@ img{
 
 #press{
     transition: 0.15s;
-    margin-top: 20vh;
+    margin-top: 15vh;
+    letter-spacing: normal;
 }
 
 .press-button{
