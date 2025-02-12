@@ -39,7 +39,7 @@
         </div>
         <div class="short-step">
             <p class="step-name">Izrada i testiranje prodajne prezentacije</p>
-            <p class="step-description">azvijamo prodajnu priču i provjeravamo kako funkcionira u stvarnim razgovorima s kupcima.</p>
+            <p class="step-description">Razvijamo prodajnu priču i provjeravamo kako funkcionira u stvarnim razgovorima s kupcima.</p>
         </div>
         <div class="short-step">
             <p class="step-name">Postavljanje sustava izvještavanja</p>
@@ -81,19 +81,48 @@
             <p>Poziv</p>
         </div>
     </section>
+    <section id="contacts-pc">
+        <div class="contact-type-pc" onclick="window.open('https://www.linkedin.com/in/ivan-gale-0892b82/', '_blank');" style="cursor: pointer;">
+            <img src="../img/LinkedIn.png" alt="linkedin">
+            <p>Linkedin</p>
+        </div>
+        <div class="contact-type-pc">
+            <img src="../img/mail.svg" alt="mail">
+            <p>ivan.gale@egalsmp.hr</p>
+        </div>
+        <div class="contact-type-pc">
+            <img src="../img/tel.svg" alt="phone">
+            <p>+385914826124</p>
+        </div>
+    </section>
 </body>
 
 <script>
 
     var clicked = false;
+    var showing = false;
+
+    var flexString = "flex";
+    var noneString = "none";
 
     function setContacts() {
 
-        document.getElementById("contacts").style.display = "flex";
+        const button = document.getElementById("press-button-contact2");
+        const contacts = window.innerWidth > 700 
+            ? document.getElementById("contacts-pc") 
+            : document.getElementById("contacts");
 
-        document.getElementById("press-button-contact2").classList.add("press-button-chosen");
+        if (!showing) {
+            button.classList.add("press-button-chosen");
+            contacts.style.display = "flex";
+        } else {
+            button.classList.remove("press-button-chosen");
+            contacts.style.display = "none";
+        }
 
-        if(!clicked){
+        showing = !showing;
+
+        if(showing){
             clicked = true;
             window.scrollBy({ top: 450, behavior: 'smooth' });
         }

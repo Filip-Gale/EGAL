@@ -1,6 +1,6 @@
 #contacts{
     flex-direction: column;
-    margin: 50px 0;
+    padding: 50px;
     display: none;
     max-width: 700px;
 }
@@ -32,6 +32,32 @@
     width: 80%;
 }
 
+#contacts-pc{
+    display: none;
+    flex-direction: column;
+}
+
+.contact-type-pc{
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 700px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    user-select:text;
+}
+
+.contact-type-pc img{
+    max-width: 50px;
+    margin-right: 20px;
+}
+
 @media (min-width: 700px){
     #contacts{
         display: none;
@@ -40,19 +66,5 @@
         width: 50%;
         margin: 50px auto 100px;
         align-items: flex-start;
-    }
-
-    .contact-type{
-        width: 15%;
-        margin: 0 50px;
-        padding: 15px;
-    }
-
-    .contact-type:hover{
-        transform: scale(1.1);
-    }
-
-    .contact-type img{
-        width: 100%;
     }
 }
