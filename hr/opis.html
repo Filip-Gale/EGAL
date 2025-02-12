@@ -6,6 +6,7 @@
     <title>EGAL</title>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="../opis.css">
+    <link rel="stylesheet" href="../contacts.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -253,7 +254,6 @@
 </body>
 
 <script>
-    var clicked = false;
 
     function setModule7() {
 
@@ -264,11 +264,6 @@
         document.getElementById("press-button-7").classList.add("press-button-chosen");
         document.getElementById("press-button-12").classList.remove("press-button-chosen");
         document.getElementById("press-button-contacts").classList.remove("press-button-chosen");
-        
-        if(!clicked){
-            clicked = true;
-            window.scrollBy({ top: 150, behavior: 'smooth' });
-        }
     }
 
     function setModule12() {
@@ -280,11 +275,6 @@
         document.getElementById("press-button-7").classList.remove("press-button-chosen");
         document.getElementById("press-button-12").classList.add("press-button-chosen");
         document.getElementById("press-button-contacts").classList.remove("press-button-chosen");
-        
-        if(!clicked){
-            clicked = true;
-            window.scrollBy({ top: 150, behavior: 'smooth' });
-        }
     }
 
     function setContacts(){
@@ -295,11 +285,6 @@
         document.getElementById("press-button-7").classList.remove("press-button-chosen");
         document.getElementById("press-button-12").classList.remove("press-button-chosen");
         document.getElementById("press-button-contacts").classList.add("press-button-chosen");
-        
-        if(!clicked){
-            clicked = true;
-            window.scrollBy({ top: 150, behavior: 'smooth' });
-        }
     }
 
     document.addEventListener("DOMContentLoaded", () => {

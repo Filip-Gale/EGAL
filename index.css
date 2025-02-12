@@ -19,7 +19,6 @@ html {
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
-    background-color: rgb(233, 233, 233);
     background: linear-gradient(0deg, rgb(180, 180, 180), #f0f0f0);
     font-size: 24px;
     text-align: center;
@@ -34,35 +33,19 @@ img{
     width: 60%;
 }
 
-#top{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    max-width: 100%;
-    letter-spacing: 10px;
-    background: linear-gradient(0deg, black, #222);
-    color:rgb(255, 255, 255);
-    transition: 0.5s;
-    position:fixed;
-    top: 0;
-    z-index: 1;
+#top-content{
+    background-color: black;
+    color: white;
+    padding: 100px 0 20px;
+    text-align: center;
+}
+
+#top-content *{
+    max-width: 300px;
 }
 
 #top-content p{
-    margin-top: 20px;
-}
-
-#top-content{
-    animation: fadein 1s ease-out;
-}
-
-#press{
-    transition: 0.15s;
-    margin-top: 15vh;
-    letter-spacing: normal;
+    margin: 20px auto 0;
 }
 
 .press-button, .press-button-choice{
@@ -82,8 +65,8 @@ img{
 
 .press-button-chosen{
     transition: 0.1s;
-    background-color: rgb(26, 26, 26);
-    color: white;
+    background-color:white ;
+    color: rgb(26, 26, 26)
 }
 
 h1{
@@ -175,8 +158,6 @@ h2{
     font-size: 20px;
 }
 
-
-
 @keyframes fadein{
     0% {
         opacity: 0;
@@ -209,14 +190,14 @@ h2{
 
 @media (min-width: 700px) , (orientation: landscape) {
 
-    
-    #top-content{
-        width: 20%;
-    }
-
     #explanation{
         font-size: 32px;
     }
-
     
+    #short-steps{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 700px;
+        margin: 20px auto;
+    }
 }
